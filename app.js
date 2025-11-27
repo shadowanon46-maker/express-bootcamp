@@ -8,6 +8,15 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello, World!' });
 });
 
+app.get('/users', (req, res) => {
+  const users = [
+    { id: 1, name: 'Alice', role: 'admin' },
+    { id: 2, name: 'Bob', role: 'user' },
+    { id: 3, name: 'Charlie', role: 'user' }
+  ];
+  res.json(users);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
