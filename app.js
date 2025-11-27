@@ -4,6 +4,8 @@ const port = 5000;
 
 app.use(express.json());
 
+
+// ini belum selesai kodingannya. 
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome Express API' });
 });
