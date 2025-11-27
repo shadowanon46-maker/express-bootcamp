@@ -4,8 +4,6 @@ const port = 5000;
 
 app.use(express.json());
 
-
-// ini belum selesai kodingannya. 
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome Express API' });
 });
@@ -19,4 +17,6 @@ app.get('/users', (req, res) => {
   res.json(users);
 });
 
-
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`);
+});
