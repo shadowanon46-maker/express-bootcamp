@@ -19,6 +19,14 @@ app.get('/users', (req, res) => {
   res.json(users);
 });
 
+app.get('/products', (req, res) => {
+  const products = [
+    { id: 1, name: 'Laptop Gaming', price: 15000000 },
+    { id: 2, name: 'Mouse Wireless', price: 150000 }
+  ];
+  res.json(products);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
