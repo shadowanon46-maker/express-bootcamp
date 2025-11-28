@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Testing berjalan... Sukses!\" && exit 1"
+    "test": "echo \"Waduh error!\" && exit 1"
   },
   "keywords": [],
   "author": "",
